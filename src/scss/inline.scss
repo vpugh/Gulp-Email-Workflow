@@ -1,0 +1,153 @@
+
+@import 
+	'reset'
+;
+
+$font-stack: 'Helvetica Neue', Helvetica, 'Arial', sans-serif;
+$theme: rgb(255, 219, 58);
+$bg-color: #F5F5F5;
+
+
+body {
+	background-color: $bg-color; 
+}
+
+a {
+	color: #000;
+}
+
+
+#body-container {
+	width: 100%;
+	max-width: 600px;
+	margin: 20px auto;
+	
+}
+
+
+
+/* **********************
+
+	Preheader
+
+ ********************** */
+
+
+
+#template-preheader {
+
+	td {
+		padding: 15px 10px;
+		font-family: $font-stack;
+		font-style: italic;
+		color: #606060; 
+		font-size: 13px;
+	}
+
+	td:last-child {
+		text-align: right;
+	}
+}
+
+
+
+
+
+/* **********************
+
+	Main Content
+
+ ********************** */
+
+#template-content {
+	background-color: #fff;
+	box-shadow: 2px 2px 3px rgba(150, 150, 150, 0.2)
+}
+
+
+
+#template-content-header {
+	text-align: center; 
+	position: relative;
+	td {
+		background-color: $theme;
+		padding: 20px 15px;
+		font-family: $font-stack;
+	}
+}
+
+.email-title {
+	line-height:120%; 
+	color: #000; 
+	font-size: 24px; 
+	font-weight: 700; 
+	text-decoration: none;
+}
+.email-subtitle {
+	font-size: 16px;
+}
+
+
+
+
+
+/* */
+
+#template-content-content {
+	width: 90%;
+	max-width: 560px;
+	text-align: left;
+	font-family: $font-stack;
+	font-weight: 400;
+	font-size: 16px; 
+	line-height:150%;
+	margin: 30px 0;
+
+}
+
+
+/* */
+
+#template-content-footer {
+	
+	tr {
+		background-color: rgb(240, 240, 240);
+	}
+
+	td {
+		padding: 20px 15px;
+		font-family: $font-stack;
+		font-weight: 400;
+		line-height:125%;
+		font-size: 15px; 
+	}
+}
+
+
+
+
+/* **********************
+
+	Footer
+
+ ********************** */
+
+#template-footer {
+
+	td {
+		font-family: $font-stack;
+		color: #606060;  
+		font-size: 11px; 
+		line-height: 150%; 
+		text-align:center;
+		padding: 30px 10px 20px;
+	}
+
+	p {	
+		display: block;
+		margin-bottom: 15px;
+	}	
+}
+
+
+

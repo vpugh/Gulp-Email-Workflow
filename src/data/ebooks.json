@@ -1,0 +1,32 @@
+{
+	"parkell_veneer": [
+		{
+			"book_cover": "https://cdeworld.com/media/13041",
+			"book_title": "Creating Veneer Provisionals Using Silicone Matrices and Models",
+			"book_author": "Lee Ann Brady, DMD",
+			"book_sponsor": "Parkell, Inc",
+			"book_url": "https://cdeworld.com/ebooks/creating-veneer-provisionals-using-silicone-matrices-and-models",
+			"book_downloadurl": "https://cdeworld.com/ebooks/download/creating-veneer-provisionals-using-silicone-matrices-and-models"
+		}
+	],
+	"bioactive_bisco": [
+		{
+			"book_cover": "https://cdeworld.com/media/12979",
+			"book_title": "Bioactive Material Considerations for Vital Pulp-Capping Protocols",
+			"book_author": "Mark L. Cannon, DDS, MS",
+			"book_sponsor": "BISCO, Inc.",
+			"book_url": "https://cdeworld.com/ebooks/Bioactive-Material-Considerations-or-Vital-Pulp-Capping-Protocols",
+			"book_downloadurl": "https://cdeworld.com/ebooks/download/Bioactive-Material-Considerations-or-Vital-Pulp-Capping-Protocols"
+		}
+	],
+	"bonding_heraeus": [
+		{
+			"book_cover": "https://cdeworld.com/media/12961",
+			"book_title": "Predictable and Simplified: How Universal Bonding Improves Treatment Confidence",
+			"book_author": "Barry F. Bartusiak, DMD",
+			"book_sponsor": "Heraeus Kulzer",
+			"book_url": "https://cdeworld.com/ebooks/Predictable-and-Simplified-How-Universal-Bonding-Improves-Treatment-Confidence",
+			"book_downloadurl": "https://cdeworld.com/ebooks/download/Predictable-and-Simplified-How-Universal-Bonding-Improves-Treatment-Confidence"
+		}
+	]
+}

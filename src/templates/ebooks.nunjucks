@@ -1,0 +1,138 @@
+{% include "partials/cdew-header.nunjucks" %}
+<center class="">
+
+  {#<!-- PREHEADER //////////////// -->
+   <table border="0" cellpadding="0" cellspacing="0" id="template-preheader" width="100%">
+    <tr>
+      <td mc:edit="preheader_content01" valign="top" width="50%">
+          {% block preheader %}{% endblock %}
+      </td>
+      <td mc:edit="preheader_content02" valign="top" width="50%">
+          <a href="*|ARCHIVE|*">View this email in your browser</a>
+      </td>
+    </tr>
+  </table> #}
+
+	<table class="preheader container" width="650" cellpadding="0" cellspacing="0" border="0" align="center">
+	    <tr>
+		    <td align="center" style="font-size: 0.75rem; font-family:Helvetica, sans-serif; padding:20px 0; color:#666666;">
+		    	Having trouble viewing this email? <a href="http://www.aegispublications.com/news/cdeworld/2017/01/ebooks-01.html" target="_blank" style="font-family:Helvetica, sans-serif; color:#2469aa; text-decoration:none;">Click here.</a>
+		   </td>
+		</tr>
+	</table>
+
+
+  <!-- START TEMPLATE CONTENT //////////////// -->
+  <center class="main-container">
+
+    <!-- EMAIL HEADER -->
+    {# <table border="0" cellpadding="0" cellspacing="0" id="template-content-header" width="100%">
+      <tr>
+        <td align="center" valign="top">
+            <h1 mc:edit="email_title" class="email-title">
+            {% block email_title %}{% endblock %}
+            </h1>
+            <p mc:edit="email_subtitle" class="email-subtitle">
+            {% block email_subtitle %}{% endblock %}
+            </p>
+        </td>
+      </tr>
+    </table> #}
+
+    <!-- Nav Header -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td class="header-image-container" style="background:#2469aa;">
+            <a href="{{cdeworld.cdewebooks_url}}" target="_blank">
+                <img class="header-image" src="http://aegispublications.com/news/cdeworld/2016/02/images/cdeworld-ebook-logo.jpg" alt="CDEWorld eBooks" width="266" height="70" border="0" style="padding: 20px 0 20px 30px; color: #ffffff;">
+            </a>
+        </td>
+        <td class="header-right" width="650" align="right" style="background-color: #2469aa;">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody><tr>
+                    <td class="header-forward" align="right" style="background:#2469aa;">
+                        <a href="mailto:?subject=CDEWorld eBooks&amp;body=I thought you might be interested in this: http://www.aegispublications.com/news/cdeworld/2016/12/ebooksr-16.html" target="_blank" style="text-decoration:none; color:#ffffff; font-size:12px;">
+                				Forward to a Colleague
+                        </a>
+                    </td>
+                    <td class="header-social" align="right" style="background-color: #2469aa; padding-right: 35px; padding-left: 25px;">
+                        <img src="http://aegispublications.com/news/ce/2016/templates/soc-2.png" alt="" usemap="#map2">
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color: #2469aa; border-top: 1px solid #1A5286;">
+            <table class="navigation" align="center" width="100%" style="font-family: Arial, sans-serif; font-size: .9375em; background: #2469aa; color: #ffffff;">
+                <tbody><tr>
+                    <td align="center" style="width:25%;">
+                        <a href="{{cdeworld.cdewCourses_url}}" target="_blank" style="border-right:1px solid #1A5286; padding:12px 0 10px 0; text-transform:uppercase; color: #ffffff; display:block; text-decoration:none;">Courses</a>
+                    </td>
+                    <td align="center" style="width:25%;">
+                        <a href="{{cdeworld.cdewevents_url}}" target="_blank" style="border-right:1px solid #1A5286; padding:12px 0 10px 0; text-transform:uppercase; color: #ffffff; display:block; text-decoration:none;">Events</a>
+                    </td>
+                    <td align="center" style="width:25%;">
+                        <a href="{{cdeworld.cdewwebinars_url}}" target="_blank" style="border-right:1px solid #1A5286; padding:12px 0 10px 0; text-transform:uppercase; color: #ffffff; display:block; text-decoration:none;">Webinars</a>
+                    </td>
+                    <td align="center" style="width:25%;">
+                        <a href="{{cdeworld.cdewebooks_url}}" target="_blank" style="padding:12px 0 10px 0; text-transform:uppercase; color: #ffffff; display:block; text-decoration:none;">eBooks</a>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    </table>
+
+
+    <!-- EMAIL CONTENT -->
+    <div mc:edit="body" id="template-content-content">
+      {% block email_content %}{% endblock %}
+    </div>
+
+    {# <!-- Ebooks Content -->
+    <div mc:edit="body" id="template-content-content">
+        {% block ebook_content %} {% endblock %}                            
+    </div> #}
+
+
+    <!-- EMAIL FOOTER -->
+    <table border="0" cellpadding="0" cellspacing="0" id="template-content-footer" width="100%">
+      <tr>
+        <td align="center" valign="top" mc:edit="email_footer">
+            {% block email_footer %}{% endblock %}
+        </td>
+      </tr>
+    </table>
+
+  </center>
+  <!-- END TEMPLATE CONTENT //////////////// -->
+
+
+  <!-- TEMPLATE FOOTER //////////////// -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" id="template-footer">
+    <tr>
+        <td align="center" valign="top">
+          <p>
+            This email was sent to <a href="mailto:*|EMAIL|*" target="_blank">*|EMAIL|*</a>
+          </p>
+          <p>
+            <a href="*|ABOUT_LIST|*" target="_blank"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="*|UNSUB|*">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*">update subscription preferences</a>
+          </p>
+          <p>
+            <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.<br>
+            *|LIST:ADDRESSLINE|*
+            </em>
+          </p>
+          <p>*|REWARDS|*</p>
+      </td>
+    </tr>
+  </table>
+
+</center>
+<map name="Map2">
+  <area shape="rect" coords="-1,2,26,25" href="{{cdeworld.cdewfb_url}}" target="_blank">
+  <area shape="rect" coords="29,2,51,30" href="{{cdeworld.cdewtw_url}}" target="_blank">
+</map>
+</body>
+</html>

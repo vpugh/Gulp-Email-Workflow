@@ -1,0 +1,24 @@
+{
+  "name": "gulp-email-workflow",
+  "version": "1.0.0",
+  "description": "A Gulp-based workflow for creating HTML emails utilizing templating and json data.",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-data": "^1.2.1",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

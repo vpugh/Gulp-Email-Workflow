@@ -1,0 +1,62 @@
+{% extends "mailchimp.nunjucks" %}
+
+{% block preheader %} 
+A gulp workflow for building HTML emails
+{% endblock %}
+
+{% block email_title %} 
+Gulp Email Workflow!
+{% endblock %}
+
+{% block email_subtitle %} 
+Build Better Emails
+{% endblock %}
+
+
+{% block email_content %} 
+<p><a href="https://github.com/ireade/gulp-email-workflow">Gulp Email Workflow</a> is a simple workflow for building HTML emails using Gulp.js. Lorem Khaled Ipsum is a major key to success. Find peace, life is like a water fall, you’ve gotta flow. They don’t want us to win. Wraith talk. Cloth talk. </p>
+
+<h2>Sample Content</h2>
+
+<h3>A code block</h3>
+
+<pre><code class="language-css">.hg { 
+  display: grid; 
+  grid-template-areas: "header header header" 
+		       "navigation main ads" 
+		       "footer footer footer";
+  grid-template-columns: 150px 1fr 150px; 
+  grid-template-rows: 100px 1fr 30px; 
+  min-height: 100vh; 
+}</code></pre>
+
+<h3>An unordered list</h3>
+
+<ul>
+	<li>List item one</li>
+	<li>List item two</li>
+	<li>List item three</li>
+</ul>
+
+<h3>An ordered list</h3>
+
+<ol>
+	<li>List item one</li>
+	<li>List item two</li>
+	<li>List item three</li>
+</ol>
+
+<h3>A block quote</h3>
+
+<blockquote>
+	The first of the month is coming, we have to get money, we have no choice. 
+</blockquote>
+
+{% endblock %}
+
+
+
+{% block email_footer %} 
+Thank you for reading!
+{% endblock %}
+

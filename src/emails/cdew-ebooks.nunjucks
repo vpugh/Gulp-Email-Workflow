@@ -1,0 +1,114 @@
+{% extends "ebooks.nunjucks" %}
+
+{% block preheader %} 
+A gulp workflow for building HTML emails
+{% endblock %}
+
+{% block email_content %} 
+<p><a href="https://github.com/ireade/gulp-email-workflow">Gulp Email Workflow</a> is a simple workflow for building HTML emails using Gulp.js. Lorem Khaled Ipsum is a major key to success. Find peace, life is like a water fall, you’ve gotta flow. They don’t want us to win. Wraith talk. Cloth talk. </p>
+
+<h2>Sample Content</h2>
+
+<h3>A code block</h3>
+
+<pre><code class="language-css">.hg { 
+  display: grid; 
+  grid-template-areas: "header header header" 
+		       "navigation main ads" 
+		       "footer footer footer";
+  grid-template-columns: 150px 1fr 150px; 
+  grid-template-rows: 100px 1fr 30px; 
+  min-height: 100vh; 
+}</code></pre>
+
+<h3>An unordered list</h3>
+
+<ul>
+	<li>List item one</li>
+	<li>List item two</li>
+	<li>List item three</li>
+</ul>
+
+<h3>An ordered list</h3>
+
+<ol>
+	<li>List item one</li>
+	<li>List item two</li>
+	<li>List item three</li>
+</ol>
+
+<h3>A block quote</h3>
+
+<blockquote>
+	The first of the month is coming, we have to get money, we have no choice. 
+</blockquote>
+
+<table>
+<tr>
+    <td colspan="2" class="ebook-entry" style="border-top: 1px solid #e8e8e8; padding: 30px 0;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td id="ebook-image" width="150" align="left">
+                    <a href="https://cdeworld.com/ebooks/creating-veneer-provisionals-using-silicone-matrices-and-models" target="_blank">
+                        <img src="https://cdeworld.com/media/13041" width="120" border="0" style="padding-right: 15px;">
+                    </a>
+                </td>
+                <td class="ebook-text">
+                    <div style="font-family: Helvetica, sans-serif; color: #666666; font-size: 1.0625em; line-height: 1.25em; font-weight: bold; text-decoration: none; padding-bottom: 5px;">
+                            Creating Veneer Provisionals Using Silicone Matrices and Models </div>
+                    <span style="font-size: .9375rem; line-height: 1.3em;">
+                    By Lee Ann Brady, DMD<br>
+                        <span style="font-size: 0.875rem">
+                        <em>Supported by Parkell, Inc</em><br>
+                        2 CEU for $0
+                        </span>
+                    </span><br>
+                    <a class="button" href="https://cdeworld.com/ebooks/download/creating-veneer-provisionals-using-silicone-matrices-and-models" target="_blank" style="background: #2469aa; padding: 11px 22px 9px 22px; display: inline-block; color: #ffffff; text-decoration: none; text-transform: uppercase; margin-top: 15px; font-size: 0.8125em; border-radius: 5px;">
+                        Download Now
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+{# {% for books in ebooks.list %} #}
+<!-- Loop -->
+{% for books in cdwebooks.ebooks %}
+<tr>
+    <td colspan="2" class="ebook-entry" style="border-top: 1px solid #e8e8e8; padding: 30px 0;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                
+                <td id="ebook-image" width="150" align="left">
+                    <a href="{{books.book_url}}" target="_blank">
+                        <img src="{{books.book_cover}}" alt="" width="120" border="0" style="padding-right: 15px;">
+                    </a>
+                </td>
+                <td class="ebook-text">
+                    <div style="font-family: Helvetica, sans-serif; color: #666666; font-size: 1.0625em; line-height: 1.25em; font-weight: bold; text-decoration: none; padding-bottom: 5px;">{{book_t}}</div>
+                    <span style="font-size: .9375rem; line-height: 1.3em;">
+                    By Lee Ann Brady, DMD<br>
+                        <span style="font-size: 0.875rem">
+                        <em>Supported by Parkell, Inc</em><br>
+                        2 CEU for $0
+                        </span>
+                    </span><br>
+                    <a class="button" href="https://cdeworld.com/ebooks/download/creating-veneer-provisionals-using-silicone-matrices-and-models" target="_blank" style="background: #2469aa; padding: 11px 22px 9px 22px; display: inline-block; color: #ffffff; text-decoration: none; text-transform: uppercase; margin-top: 15px; font-size: 0.8125em; border-radius: 5px;">
+                        Download Now
+                    </a>
+                </td>
+                
+            </tr>
+        </table>
+    </td>
+</tr>
+{% endfor %}
+</table>
+{# {% endfor %} #}
+{% endblock %}
+
+
+{% block email_footer %} 
+Thank you for reading!
+{% endblock %}
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test Email</title>
+	<link rel="stylesheet" href="/css/test-style.css">
+</head>
+<body>
+	<table class="main-container">
+		<tr>
+			<td class="header">Headers</td>
+		</tr>
+		<tr>
+			<td class="main-content">
+			
+			Main Content
+			<a class="test-link" href="{{cdeworld.cdewDDS_url}}" target="_blank">CDEWorld-DDS</a>
+			
+			</td>
+		</tr>
+		<tr>
+			<td class="footer">Footer</td>
+		</tr>
+	</table>
+</body>
+</html>
