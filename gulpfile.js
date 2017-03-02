@@ -28,6 +28,18 @@ var onError = function (err) {
 	this.emit('end');
 }
 
+// CSS Inline
+gulp.task('sassInline', function() {
+	return gulp.src('build/**/*.html')
+		.pipe(inlineCss({
+			applyStyleTags: true,
+            applyLinkTags: true,
+            removeStyleTags: true,
+            removeLinkTags: true
+		}))
+		.pipe(gulp.dest('build/'));
+});
+
 //  Data
 var globalData = {
 	cdeworld: require('./src/data/cdeworld.json'),
@@ -72,10 +84,10 @@ gulp.task('inline', function() {
 
 gulp.task('watch', ['nunjucks', 'browserSync', 'sass'], function() {
 	gulp.watch('src/scss/**/*.scss', ['sass']);
-	//gulp.watch('src/**/*.html', browserSync.reload);
+	gulp.watch('build/**/*.html', browserSync.reload);
 	gulp.watch(['src/templates/**/*.nunjucks', 'src/emails/**/*.nunjucks'], ['nunjucks'], browserSync.reload);
 });
 
-gulp.task('deploy', ['inline'], function() {
+gulp.task('deploy', ['sassInline'], function() {
 	
 });
