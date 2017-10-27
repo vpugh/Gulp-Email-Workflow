@@ -1,0 +1,14 @@
+<tr>
+    <td align="center" style="padding:20px 30px; border-bottom: 1px solid #ededed;">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+                <td align="left" class="header">
+                    {{logoType}}
+                </td>
+                <td align="right" class="browser-view">
+                    <a href="{{browserURL}}" target="_blank" style="color:inherit;">View in Browser</a>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>

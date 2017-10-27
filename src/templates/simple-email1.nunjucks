@@ -1,0 +1,32 @@
+{% include "partials/simple-email1/header.nunjucks" -%}
+
+<table class="main-container" align="center" width="600" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; color:#777777; font-family: Helvetica, Arial, sans-serif; margin-top:30px;">
+    {% include "partials/simple-email1/emailTop.nunjucks" -%}
+    <tr>
+        <td class="main-content" style="padding:30px 30px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <img src="{{mainImageSrc}}" alt="Example Email Image" class="img">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px 0 5px 0;">
+                        <h2 style="margin:0;font-size:22px;color:#222222;">{{mainTitle}}</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:16px; line-height: 22px; color:#444444;">
+                        {{content | safe}}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color:red; display:inline-block; padding:15px 30px; border-radius:4px;">
+                        <a href="{{ctaURL}}" target="_blank" style="text-decoration:none;color:#fffffe;">{{ctaText}}</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+{% include "partials/simple-email1/footer.nunjucks" -%}

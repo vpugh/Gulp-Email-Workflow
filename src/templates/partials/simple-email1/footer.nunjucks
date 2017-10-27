@@ -1,0 +1,19 @@
+            <tr>
+                <td class="footer" align="center" style="padding:20px 30px; background-color: #333333; font-size: 12px;">
+                    © 2017 {{logoType}}
+                </td>
+            </tr>
+        </table>
+        <table class="main-container"  align="center" width="600" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td align="center" style="padding:15px 30px;font-size:10px; font-family: Helvetica, Arial, sans-serif;line-height:16px;color:#999999;">
+                    <p style="">
+                    Hello, small print fans. Looks like we made it all the way to the eleventh edition of the Ueno newsletter. It was, as usual, hand-made for you by real people who, yes, may be melancholic but try to by photogenic about it. 
+                    </p>
+                    <p>Unhappy and want to leave, fine... we'll miss you. :'( <a href="#" style="color:inherit">unsubscribe</a></p>
+
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

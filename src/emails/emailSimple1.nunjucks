@@ -1,0 +1,10 @@
+{% extends "simple-email1.nunjucks" -%}
+
+{% block preheader %}Test Email{% endblock -%}
+{% set logoType = 'Fancy Company Logo' -%}
+{% set browserURL = 'http://google.com' -%}
+{% set ctaURL = 'http://images.google.com' -%}
+{% set ctaText = 'Learn More About Tacos' -%}
+{% set mainImageSrc = 'https://images.unsplash.com/photo-1507149214576-19e2f76d09ad?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=540&h=250&fit=crop&s=ffe1adeb91bae71fd7d2d9421b3b2eb5' -%}
+{% set mainTitle = 'The Title of This Email' -%}
+{% set content = '<p>No. BARBACOA!! CARNE ASADA!! Burritos are very tasty. Burritos are very tasty. CARNE ASADA!! Black or pinto beans? How bout a gosh darn quesadilla? How do you feel about hard shelled tacos? Flour or corn tortillas? Say taco one more time. 50 cent tacos! I’ll take 30. Tacos Al pastor/De Adobada are made of thin pork steaks seasoned with adobo seasoning, then skewered and overlapped on one another on a vertical rotisserie cooked and flame-broiled as it spins. CARNE ASADA!!</p>' -%}

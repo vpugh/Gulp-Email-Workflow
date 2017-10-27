@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block preheader %}{% endblock -%}</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	{% block responsive %}
+	<style type="text/css">
+	@media (max-width:480px){
+		.main-content,
+		.main-container {
+			width:100% !important;
+			} 
+		.img {
+			max-width:100% !important;}
+	}
+	@media (max-width:420px){
+		.header,
+		.browser-view {
+			width:100% !important;
+			display: block !important;
+			text-align:left !important;
+			padding: 12px 0;
+		}
+	}
+	</style>
+	{% endblock -%}
+</head>
+<body style="margin:0; padding:0; background:#dddddd;">
